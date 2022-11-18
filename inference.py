@@ -5,20 +5,16 @@
 # @Project : aidant_retinal-disease
 # @Author : seungmin
 
-import os, yaml, itertools
+import os, yaml
 import torch
-import numpy as np
-from PIL import Image
 
 import torchvision.transforms as T
 
-import matplotlib.pyplot as plt
-import scikitplot as skplt
-from utils.dataloader_multi import MyInferDatasetWrapper
+from utils.dataloader import MyInferDatasetWrapper
 from utils.cam import GradCAM
 from utils.visualize import visualize, reverse_normalize
 
-from model import *
+from model.model import *
 
 
 ## load model
